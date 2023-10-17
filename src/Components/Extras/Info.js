@@ -148,16 +148,16 @@ export default function Info({pokemonDetails, onClose, onMovesClick, onStatsClic
     ));
   
       return(
-        <div className="fixed inset-0 z-10 first-letter md:overflow-y-auto items-center">
+        <div className="fixed inset-0 z-10 first-letter overflow-y-auto items-center">
           <div className='flex md:min-h-full items-end justify-center p-4 text-center sm:items-center sm:p-0'>
             <div className={` bg-yellow-100 relative transform overflow-hidden rounded-lg text-left shadow-xl transition-all sm:my-8 sm:w-full sm:max-w-lg`}>
-            <div className='flex flex-row-reverse justify-between px-4 py-3'>
+            <div className='flex flex-row-reverse justify-between px-20 py-2 md:px-4 md:py-3'>
               <button onClick={handleStats}
-                className=" mt-3 inline-flex w-full justify-center rounded-md bg-red-600 px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-red-400 sm:mt-0 sm:w-auto"
+                className=" mt-3 inline-flex justify-center rounded-md bg-red-600 px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-red-400 sm:mt-0 sm:w-auto"
               ><FontAwesomeIcon icon={faChartSimple} className='p-1 text-lg text-white'/>
               </button>
               <button onClick={handlerMoves}
-                className=" mt-3 inline-flex w-full justify-center rounded-md bg-red-600 px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-red-400 sm:mt-0 sm:w-auto"
+                className=" mt-3 inline-flex justify-center rounded-md bg-red-600 px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-red-400 sm:mt-0 sm:w-auto"
                 ><FontAwesomeIcon icon={faHandFist} className='p-1 text-lg text-white'/></button>
               </div>
               <div className='flex justify-center '>

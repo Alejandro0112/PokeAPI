@@ -3,8 +3,8 @@ import React from "react";
 
 function NavbarPkm ({searchPokemon, setSearchPokemon, region, setregion, types, setTypes}){
         return(
-            <nav className="z-0 bg-red-700 w-full md:h-11 ">
-                <div className=" text-white font-mono md:flex justify-between py-2 mx-4">
+            <nav className="z-0 bg-red-700 w-full">
+                <div className=" text-white font-mono flex justify-between py-2 mx-4">
                     <p className="text-xl hidden sm:block">Pokemon</p>
                     <div className="flex md:px-2">
                     <input className="rounded mr-4  bg-gray-200 text-black px-2" type="text" placeholder="Search" value={searchPokemon} onChange={

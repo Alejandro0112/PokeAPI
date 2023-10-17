@@ -106,9 +106,9 @@ function Evolution({speciesName}){
 
       <div className="bg-gray-50 rounded-lg mx-6 mt-4 shadow-lg">
         <p className=" uppercase font-semibold text-center mb-2">evolution chain</p>
-        <div className={isCircleLayout ? "flex flex-wrap justify-center" : "flex justify-center"}>
+        <div className={isCircleLayout ? "flex flex-wrap justify-center" : "flex justify-center sm:flex flex-wrap"}>
             {Object.keys(pokemonImg).map((name, index) => (
-                <img key={index} src={pokemonImg[name]} alt={name} className={isCircleLayout ? "circle-image" : "h-40"}/>
+                <img key={index} src={pokemonImg[name]} alt={name} className={isCircleLayout ? "circle-image " : "h-40"}/>
             ))}
         </div>
        {/*} <div className="flex justify-center space-x-10">
